@@ -1,0 +1,56 @@
+.D-part{
+    width: 100%;
+    height: 90vh;
+    background-color:#E2DEDE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.D-part-1{
+    width: 30%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid black;
+}
+.D-part-2{
+    width: 20vw;
+    height: 90px;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.D-part-2 input{
+    width: 100%;
+    height: 40px;
+}
+.D-part-3{
+    width: 20vw;
+    height: 230px;
+    /* background-color: rgb(172, 28, 28); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     font-size: 15px;
+    font-weight: 600;
+}
+.D-part-3 textarea{
+    width: 100%;
+    height: 80%;
+}
+.D-part button{
+    width: 310px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #E4642D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

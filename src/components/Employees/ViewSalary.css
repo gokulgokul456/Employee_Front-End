@@ -1,0 +1,106 @@
+.Salary {
+  max-width: 1350px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.Salary-1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+.Salary-2 {
+  text-align: right;
+  margin-bottom: 20px;
+  
+}
+
+.Salary-2 input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  
+}
+
+th {
+  background-color: #E4642D;
+  color: white;
+  font-weight: bold;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .Salary-2 {
+    text-align: center;
+  }
+
+  .Salary-2 input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  td {
+    position: relative;
+    text-align: right;
+    padding-left: 50%;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

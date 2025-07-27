@@ -1,0 +1,52 @@
+.Summary{
+    width: 85vw;
+    height: 90%;
+    background-color: rgb(241, 239, 239);
+    padding: 6px;
+}
+.topic-1{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+.detail-boxes{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.detail-boxes-1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+@media (max-width: 768px) {
+    .topic-1{
+        height: 25px;
+        font-size: 14px;
+    }
+    .topic h4{
+        font-size: 15px;
+    }
+    .detail-boxes{
+        display: flex;
+        flex-direction: column;
+        /* background-color: green; */
+        gap: 10px;   
+    }
+    .Summary{
+        background-color: white;
+        height: 62%;
+        padding: 0;
+    }
+}

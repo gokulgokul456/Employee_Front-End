@@ -1,0 +1,46 @@
+.EmployeeSummary{
+    width: 85vw;
+    height: 90%;
+    background-color: rgb(241, 239, 239);
+    padding: 6px;
+}
+.topic{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+.detail-boxes{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.detail-boxes-1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+@media (max-width: 768px) {
+    .detail-boxes{
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .detail-boxes-1{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        height: 150px;
+    }
+
+}
