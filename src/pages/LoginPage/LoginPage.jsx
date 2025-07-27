@@ -109,7 +109,7 @@ function EmployeeLogin() {
         <h2>EMPLOYEE</h2>
         <input
           type="text"
-          placeholder="Admin Username"
+          placeholder="Employee Username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
