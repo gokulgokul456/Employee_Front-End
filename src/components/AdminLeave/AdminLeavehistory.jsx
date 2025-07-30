@@ -10,7 +10,7 @@ const EmployeeLeaves = () => {
   const fetchLeaves = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/leaves/admin/employee/${id}`,
+        `https://employee-back-end.onrender.com/api/leaves/admin/employee/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

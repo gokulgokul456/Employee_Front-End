@@ -30,7 +30,7 @@ const SettingsEmployee = () => {
 
     try {
       const response = await axios.put(
-        "http://localhost:5000/api/settings/changepassword",
+        "https://employee-back-end.onrender.com/api/settings/changepassword",
         settings,
         {
           headers: {

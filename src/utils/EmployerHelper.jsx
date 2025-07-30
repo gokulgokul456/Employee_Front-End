@@ -15,7 +15,7 @@ export const columns =[
     },
      {
      name: "Image",
-     selector: (row) => (<img src={`http://localhost:5000/uploads/${row.profileImage}`} alt="Profile"style={{ width: "40px", height: "40px", borderRadius: "50%" }}/>),
+     selector: (row) => (<img src={`https://employee-back-end.onrender.com/uploads/${row.profileImage}`} alt="Profile"style={{ width: "40px", height: "40px", borderRadius: "50%" }}/>),
       width: "80px"
     },
      {
@@ -41,7 +41,7 @@ export const columns =[
     let departments
 
       try{
-        const response = await axios.get('http://localhost:5000/api/department',{
+        const response = await axios.get('https://employee-back-end.onrender.com/api/department',{
           headers:{
           "Authorization": `Bearer ${localStorage.getItem('token')}`
         }
@@ -62,7 +62,7 @@ export const columns =[
     let employees;
 
       try{
-        const response = await axios.get(`http://localhost:5000/api/employee/department/${id}`,{
+        const response = await axios.get(`https://employee-back-end.onrender.com/api/employee/department/${id}`,{
           headers:{
           "Authorization": `Bearer ${localStorage.getItem('token')}`
         }

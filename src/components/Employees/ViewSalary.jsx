@@ -10,7 +10,7 @@ const ViewSalary = () => {
 
   const fetchSalaries = useCallback(async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/salary/${id}`, {
+      const response = await axios.get(`https://employee-back-end.onrender.com/api/salary/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

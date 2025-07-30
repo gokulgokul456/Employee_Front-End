@@ -24,7 +24,7 @@ const AddLeaves = () => {
         try {
             console.log("Submitting leave with data:", leave);
             const response = await axios.post(
-                `http://localhost:5000/api/leaves/add`,leave,
+                `https://employee-back-end.onrender.com/api/leaves/add`,leave,
                 {
                     headers: {
                         Authorization : `Bearer ${localStorage.getItem("token")}`,

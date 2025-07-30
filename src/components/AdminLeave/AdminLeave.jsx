@@ -11,7 +11,7 @@ const AdminLeave = () => {
   const fetchLeaves = async () => {
     
     try {
-      const response = await axios.get('http://localhost:5000/api/leaves', {
+      const response = await axios.get('https://employee-back-end.onrender.com/api/leaves', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }

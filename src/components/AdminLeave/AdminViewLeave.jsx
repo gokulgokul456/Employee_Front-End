@@ -10,7 +10,7 @@ const AdminViewLeave = () => {
   useEffect(() => {
     const fetchLeave = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/leaves/detail/${id}`, {
+        const response = await axios.get(`https://employee-back-end.onrender.com/api/leaves/detail/${id}`, {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           } 
@@ -31,7 +31,7 @@ const AdminViewLeave = () => {
 
   const changeStatus = async (id, status) => {
     try {
-        const response = await axios.put(`http://localhost:5000/api/leaves/${id}`, {status} ,{
+        const response = await axios.put(`https://employee-back-end.onrender.com/api/leaves/${id}`, {status} ,{
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           } 
@@ -64,7 +64,7 @@ const AdminViewLeave = () => {
           <div style={{ marginRight: "20px" }}>
             <h3 style={{marginBottom:10}}>Leave Detail</h3>
             <img
-              src={`http://localhost:5000/uploads/${leave.employeeId.userId.profileImage}`}
+              src={`https://employee-back-end.onrender.com/uploads/${leave.employeeId.userId.profileImage}`}
               alt="Profile"
               style={{ width: "200px", height: "250px", borderRadius: "10px", objectFit: "cover" }}
             />

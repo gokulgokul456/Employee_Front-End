@@ -10,7 +10,7 @@ const ViewEmployee = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/employee/${id}`, {
+        const response = await axios.get(`https://employee-back-end.onrender.com/api/employee/${id}`, {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           } 
@@ -37,7 +37,7 @@ const ViewEmployee = () => {
           <div style={{ marginRight: "20px" }}>
             <h3 style={{marginBottom:10}}>Employee Detail</h3>
             <img
-              src={`http://localhost:5000/uploads/${employee.userId.profileImage}`}
+              src={`https://employee-back-end.onrender.com/uploads/${employee.userId.profileImage}`}
               alt="Profile"
               style={{ width: "200px", height: "250px", borderRadius: "10px", objectFit: "cover" }}
             />
